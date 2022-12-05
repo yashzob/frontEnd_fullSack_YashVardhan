@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<style>
+
+
+
+    .bigBox{
+        position: relative;
+        margin-top:7em;
+        width: 550px;
+        height: 400px;
+        background-color: rgb(236, 236, 236);
+        border: 3px solid black;
+        display: block;
+    }
+    
+/* Bar 1 */
+    #outerGraphBox{
+        position: absolute;
+        height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 50px;
+        background-color: white;
+        border: 0.5px solid gray
+        }
+
+    #graphLine{
+        position: absolute;
+        max-height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 51px;
+        background-color: gray;
+        transform-origin:  bottom;
+        animation: bar1filler;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both
+        }
+
+    #percentage1{
+        position: absolute;
+        bottom: 10px;
+        left: 60px;
+    }
+/* Bar 2 */
+    #outerGraphBox2{
+        position: absolute;
+        height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 249px;
+        background-color: white;
+        border: 0.5px solid gray
+        }
+
+    #graphLine2{
+        position: absolute;
+        max-height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 250px;
+        background-color: gray;
+        transform-origin:  bottom;
+        animation: bar2filler;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both
+        }
+
+    #percentage2{
+        position: absolute;
+        bottom: 10px;
+        left: 250px;}
+
+        
+/* Bar 3 */
+    #outerGraphBox3{
+        position: absolute;
+        height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 449px;
+        background-color: white;
+        border: 0.5px solid gray
+        }
+
+    #graphLine3{
+        position: absolute;
+        max-height: 350px;
+        width: 50px;
+        bottom: 40px;
+        left: 450px;
+        background-color: gray;
+        transform-origin:  bottom;
+        animation: bar3filler;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both
+        }
+
+    #percentage3{
+        position: absolute;
+        bottom: 10px;
+        left: 450px;
+    }
+  @keyframes bar1filler {
+    from{
+      height: 0%;
+    }
+    to{
+      height: 30%;
+    }
+  }
+
+  @keyframes bar2filler {
+    from{
+      height: 0%;
+    }
+    to{
+      height: 40%;
+    }
+  }
+  
+  @keyframes bar3filler {
+    from{
+      height: 0%;
+    }
+    to{
+      height: 80%;
+    }
+  }
+</style>
+    <title>Document</title>
+</head>
+
+<body>
+   <center> 
+        <div class="bigBox">
+            
+                <div id="outerGraphBox"></div>
+                <div id="graphLine"></div>
+                <div id="percentage1">30%</div>
+                <div class="name"></div>
+
+                <div id="outerGraphBox2"></div>
+                <div id="graphLine2"></div>
+                <div id="percentage2">40%</div>
+                <div class="name"></div>
+
+
+                <div id="outerGraphBox3"></div>
+                <div id="graphLine3"></div>
+                <div id="percentage3">80%</div>
+                
+                
+           
+        </div>
+      
+</body>
+
+</html>
